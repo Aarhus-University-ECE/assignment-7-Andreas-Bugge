@@ -3,12 +3,12 @@
 #include <assert.h>
 #include <stdbool.h>
 #include <stdio.h>
-int factorial (int n)
+double factorial (int n)
 {
     assert(n >= 0); // checks to make sure n is higher than 0
     if(n == 0) //edge case if n is 0
     return 1;
-    int res = 1;
+    double res = 1;
     for(int i = 1; i <= n; i++)
     {
         res = res * i;
